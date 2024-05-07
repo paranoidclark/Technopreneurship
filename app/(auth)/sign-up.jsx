@@ -18,15 +18,15 @@ const SignUp = () => {
     const submit = () => { }
 
     return (
-        <SafeAreaView className="bg-primary h-full">
+        <SafeAreaView className="bg-#FCECDD h-full">
             <ScrollView>
                 <View className="w-full justify-center min-h-[85vh] px-4 my-6">
                     <Image
-                        source={images.logo}
+                        source={images.logo_ripple}
                         resizeMode='contain'
-                        className='w-[115px] h-[35px]'
+                        className='w-[130px] h-[84px] mx-auto'
                     />
-                    <Text className='text-2xl text-white text-semibold mt-10 font-psemibold'>Sign up to Aora</Text>
+                    <Text className='text-2xl text-black text-semibold mt-10 font-psemibold'>Sign up to Ripple</Text>
 
                     <FormField
                         title="Username"
@@ -56,7 +56,7 @@ const SignUp = () => {
                     />
 
                     <View className="justify-center pt-5 flex-row gap-2">
-                        <Text className="text-lg text-gray-100 font-pregular">
+                        <Text className="text-lg text-black-100 font-pregular">
                             have an account already?
                         </Text>
                         <Link href='/sign-in' className='text-lg font-psemibold text-secondary'>Sign in</Link>

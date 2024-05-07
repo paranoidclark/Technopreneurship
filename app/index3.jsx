@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
+import SecondaryButton from '../components/SecondaryButton';
 
 export default function App() {
     return (
@@ -18,25 +19,30 @@ export default function App() {
                     />
 
                     <Image
-                        source={images.onboard_1}
+                        source={images.onboard_3}
                         className="max-w-[380px] w-full h-[300px]"
                         resizeMode='contain'
                     />
 
                     <View className='relative mt-5'>
-                        <Text className="text-3xl text-black font-bold text-center">Welcome to{' '}
-                            <Text className="text-secondary">Ripple!</Text>
+                        <Text className="text-2xl text-black font-bold text-center">Tailored Just for{' '}
+                            <Text className="text-secondary">You!</Text>
                         </Text>
                     </View>
 
-                    <Text className="text-sm font-pregular text-black mt-7 text-center">Your personal reminder companion designed to keep you{" "}
-                        <Text className='text-secondary font-psemibold'>hydrated, healthy, and on track</Text>
-                        {" "}with your daily routines.
+                    <Text className="text-sm font-pregular text-black mt-7 text-center">Customize Ripple to match your lifestyle with{" "}
+                        <Text className='text-secondary font-psemibold'>personalized alarm settings,</Text>
+                        {" "}intuitive interface, and seamless integration with your daily routines.
                     </Text>
 
                     <CustomButton
-                        title="Learn More!"
-                        handlePress={() => router.push('/index2')}
+                        title="Login to Ripple!"
+                        handlePress={() => router.push('/sign-in')}
+                        containerStyles='w-full mt-7'
+                    />
+                    <SecondaryButton
+                        title="Make a Schedule!"
+                        handlePress={() => router.push('/home')}
                         containerStyles='w-full mt-7'
                     />
                 </View>

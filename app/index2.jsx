@@ -18,25 +18,26 @@ export default function App() {
                     />
 
                     <Image
-                        source={images.onboard_1}
+                        source={images.onboard_2}
                         className="max-w-[380px] w-full h-[300px]"
                         resizeMode='contain'
                     />
 
                     <View className='relative mt-5'>
-                        <Text className="text-3xl text-black font-bold text-center">Welcome to{' '}
-                            <Text className="text-secondary">Ripple!</Text>
+                        <Text className="text-2xl text-black font-bold text-center">Stay{' '}
+                            <Text className="text-secondary">Hydrated,</Text>
+                            {' '}Stay{' '}<Text className="text-secondary">Healthy!</Text>
                         </Text>
                     </View>
 
-                    <Text className="text-sm font-pregular text-black mt-7 text-center">Your personal reminder companion designed to keep you{" "}
-                        <Text className='text-secondary font-psemibold'>hydrated, healthy, and on track</Text>
-                        {" "}with your daily routines.
+                    <Text className="text-sm font-pregular text-black mt-7 text-center">Ripple's primary goal is to ensure you{" "}
+                        <Text className='text-secondary font-psemibold'>never miss a sip of water,</Text>
+                        {" "}offering gentle reminders throughout the day to keep you hydrated and <Text className='text-secondary font-psemibold'>feeling your best.</Text>
                     </Text>
 
                     <CustomButton
-                        title="Learn More!"
-                        handlePress={() => router.push('/index2')}
+                        title="Learn More!!"
+                        handlePress={() => router.push('/index3')}
                         containerStyles='w-full mt-7'
                     />
                 </View>
