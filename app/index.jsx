@@ -8,8 +8,8 @@ import CustomButton from '../components/CustomButton';
 
 export default function App() {
     return (
-        <SafeAreaView className="bg-#FCECDD h-full">
-            <ScrollView contentContainerStyle={{ height: '100%' }}>
+        <SafeAreaView className="bg-primary h-full">
+            <ScrollView contentContainerStyle={{ height: '100%' }} showsVerticalScrollIndicator={false}>
                 <View className="w-full justify-center items-center min-h-[95vh] px-4">
                     <Image
                         source={images.logo_ripple}
@@ -35,7 +35,7 @@ export default function App() {
                     </Text>
 
                     <CustomButton
-                        title="Learn More!"
+                        title="Get Started!"
                         handlePress={() => router.push('/index2')}
                         containerStyles='w-full mt-7'
                     />
