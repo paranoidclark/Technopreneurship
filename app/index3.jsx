@@ -14,7 +14,7 @@ export default function App() {
                 <View className="w-full justify-center items-center min-h-[95vh] px-4">
                     <Image
                         source={images.logo_ripple}
-                        className="w-[130px] h-[84px] mb-3"
+                        className="w-[140px] h-[94px] mb-3"
                         resizeMode='contain'
                     />
 
