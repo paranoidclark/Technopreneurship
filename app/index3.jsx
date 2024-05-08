@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, ScrollView, Text, View } from 'react-native';
 import { Redirect, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Link } from 'expo-router'
 
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
@@ -9,7 +10,7 @@ import SecondaryButton from '../components/SecondaryButton';
 
 export default function App() {
     return (
-        <SafeAreaView className="bg-#FCECDD h-full">
+        <SafeAreaView className="bg-primary h-full">
             <ScrollView contentContainerStyle={{ height: '100%' }}>
                 <View className="w-full justify-center items-center min-h-[95vh] px-4">
                     <Image
@@ -40,11 +41,12 @@ export default function App() {
                         handlePress={() => router.push('/sign-in')}
                         containerStyles='w-full mt-7'
                     />
-                    <SecondaryButton
-                        title="Make a Schedule!"
-                        handlePress={() => router.push('/home')}
-                        containerStyles='w-full mt-7'
-                    />
+                    <View className="justify-center pt-5 flex-row gap-2">
+                        <Text className="text-lg text-black-100 font-pregular">
+                            Continue as
+                        </Text>
+                        <Link href='/home' className='text-lg font-psemibold text-secondary'>Guest</Link>
+                    </View>
                 </View>
             </ScrollView>
 
